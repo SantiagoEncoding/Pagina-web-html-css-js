@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Argentino</title>
+    <script
+      src="https://kit.fontawesome.com/d4e9cfc54b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Montserrat:wght@400;700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <h2>
+              Restaurante <span class="celeste">Arg</span>ent<span
+                class="celeste"
+                >ino</span
+              >
+            </h2>
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#">Inicio</a>
+            <a href="#Sobre-Nosotros">Sobre Nosotros</a>
+            <a href="#menu">Menu</a>
+            <a href="#chef">Chef</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <div class="menu"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Bienvenidos!</h2>
+            <a href="#" class="btn bordes">Nuestro Menu</a>
+          </div>
+          <video autoplay loop muted>
+            <source src="./assets/cortar-carne.mp4" />
+          </video>
+        </div>
+      </div>
+    </header>
+    <section id="Sobre-Nosotros">
+    <div class="contenedor-nos contenedor">
+      <div class="texto-nos">
+        <p class="bienvenida">Bienvenido al!</p>
+        <h1>Restaurante Argentino</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, alias ea?
+          Deserunt tenetur delectus inventore ratione voluptates facilis aperiam
+          laboriosam harum debitis repudiandae necessitatibus ut sunt, eligendi
+          nihil eveniet vel? Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Eligendi dolor odio rerum ullam pariatur itaque perspiciatis,
+          magni praesentium accusantium possimus perferendis voluptatibus
+          dignissimos voluptates? Libero maiores animi placeat quis laborum?
+        </p>
+        <a href="#" class="btn btn-c">Contactar</a>
+      </div>
+      <div class="imagenes-nos">
+        <div class="img1">
+          <img data-src="./assets/comiendo2.webp" alt="comiendo en familia" />
+        </div>
+        <div class="img2">
+          <img data-src="./assets/comiendo.webp" alt="comiendo pollo" />
+          <img data-src="./assets/srcomiendo.webp" alt="sr comiendo pizza" />
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="el-menu contenedor" id="menu">
+      <h2 class="texto-platos">Platos populares</h2>
+      <!--BOTONES-->
+      <div class="botones-platos">
+        <button class="todos btn btn-celeste">Todos</button>
+        <button class="carnes btn btn-blanco">Carnes</button>
+        <button class="pizzas btn btn-celeste">Pizzas</button>
+        <button class="postres btn btn-blanco">Postres</button>
+        <button class="bebidas btn btn-celeste">Bebidas</button>
+      </div>
+      <div class="platos">
+        <div class="plato" data-plato="carne">
+          <img data-src="assets/carne1.webp" alt="carne" />
+          <h2>Churrasco</h2>
+          <p>
+            Carne vacuna con acompañamiento a seleccion(papas frances, pure de
+            papas, ensaladas)
+          </p>
+          <div class="precio">
+            <p>50$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <!--CARNES-->
+        <div class="plato" data-plato="carne">
+          <img data-src="assets/carne2.webp" alt="carne" />
+          <h2>Tiras de cerdo</h2>
+          <p>
+            Tiras de cerdo con papas europeas, bañadas en salsa vinagreta de
+            mantequilla marrón
+          </p>
+          <div class="precio">
+            <p>80$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="carne">
+          <img data-src="assets/carne3.webp" alt="carne" />
+          <h2>Tomahawk</h2>
+          <p>
+            Es un corte proveniente de las costillas, con ensalada poke de atún
+            y algas con aguacate
+          </p>
+          <div class="precio">
+            <p>75$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <!--PIZZAS-->
+        <div class="plato" data-plato="pizza">
+          <img data-src="assets/pizza2.webp" alt="pizza" />
+          <h2>Pizza marinara</h2>
+          <p>
+            Pizza con salsa de tomate, orégano, ajo, aceite de oliva, albahaca y
+            una pizca de sal. Su principal característica es que no tiene queso
+          </p>
+          <div class="precio">
+            <p>60$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="pizza">
+          <img data-src="assets/pizza1.webp" alt="pizza" />
+          <h2>Pizza fugazzeta</h2>
+          <p>
+            Fugazza con queso, cebolla, mozzarella y espolvoreada con queso
+            parmesano, aceitunas y orégano
+          </p>
+          <div class="precio">
+            <p>55$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="pizza">
+          <img data-src="assets/pizza3.webp" alt="pizza" />
+          <h2>Pizza cuatro quesos</h2>
+          <p>
+            Se divide la pizza en cuatro partes, cada una con un tipo de queso,
+            estos pueden que ser queso mozzarella, queso gorgonzola, queso
+            parmesano y queso fontina
+          </p>
+          <div class="precio">
+            <p>50$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <!--POSTRE-->
+        <div class="plato" data-plato="postre">
+          <img data-src="assets/postre1.webp" alt="postre" />
+          <h2>Helado</h2>
+          <p>
+            Helado casero con agregados de dulce de leche, nueces y galletitas
+          </p>
+          <div class="precio">
+            <p>30$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="postre">
+          <img data-src="assets/postre2.webp" alt="postre" />
+          <h2>Brownie</h2>
+          <p>Brownie de chocolate en cilicio y granos de café</p>
+          <div class="precio">
+            <p>25$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="postre">
+          <img data-src="assets/postre3.webp" alt="postre" />
+          <h2>Tarta</h2>
+          <p>Tarta de queso con gelatina de cereza</p>
+          <div class="precio">
+            <p>20$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <!--BEBIDA-->
+        <div class="plato" data-plato="bebida">
+          <img data-src="assets/bebida1.webp" alt="bebida" />
+          <h2>Ron</h2>
+          <p>
+            El famoso ron cubano provenientes de las tierras de America Central
+          </p>
+          <div class="precio">
+            <p>25$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="bebida">
+          <img data-src="assets/bebida2.webp" alt="bebida" />
+          <h2>Cerveza</h2>
+          <p>Se destaca por ser rubia, con poco alcohol y mucha tomabilidad</p>
+          <div class="precio">
+            <p>20$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+        <div class="plato" data-plato="bebida">
+          <img data-src="assets/bebida3.webp" alt="bebida" />
+          <h2>Vino</h2>
+          <p>Se caracteriza por su color intenso, su fondo frutal y floral</p>
+          <div class="precio">
+            <p>15$</p>
+            <button><i class="fa-solid fa-basket-shopping"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separador">
+      <div class="contenido-separador contenedor">
+        <h2>Comida argentina para comenzar el dia de la mejor manera</h2>
+        <p>
+          Empieza tu dia comiendo un delicioso asado o degustando una buena
+          bebida
+        </p>
+        <a href="#" class="btn btn-c">Ordenar ahora</a>
+      </div>
+    </div>
+    <section class="chef contenedor" id="chef">
+      <h2>Chef Ejecutivo</h2>
+      <div class="contenido-chef">
+        <div class="texto-chef">
+          <h3>“La mejor receta que tenéis es la pasión” -John Doe</h3>
+          <p>
+            Conocer diversos destinos implica no solo recorrer lugares,
+            disfrutar variados paisajes o actividades, una de las cosas que más
+            llama la atención en cualquier lugar es su gastronomía, los sabores,
+            aromas que caracterizan cada lugar son uno de los atractivos más
+            poderosos a la hora de viajar o simplemente al visitar un
+            restaurante, en cualquier zona del mundo. Detrás de la magia de cada
+            plato, hay todo un equipo humano liderado por un Chef Ejecutivo que
+            además de manejar todo lo que pasa en la cocina, administra todo lo
+            que hay en ella, incluyendo por supuesto cada ingrediente que allí
+            se usa
+          </p>
+          <a href="#" class="btn btn-c">Leer biografia</a>
+        </div>
+        <div class="imagen-chef">
+          <img data-src="./assets/chef.webp" alt="chef Ejecutivo" />
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+    <div class="formulario-contacto contenedor">
+      <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="fa-solid fa-location-dot"></i>Bonpland 1670, C1414 CABA</p>
+        <p><i class="fa-solid fa-envelope"></i>RestArg2022@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+381899100</p>
+        <div class="redes-sociales">
+          <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
+      <form class="formulario">
+        <div class="input-formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" placeholder="Juan" id="nombre">
+        </div>
+        <div class="input-formulario">
+          <label for="apellido">Apellido</label>
+          <input type="text" placeholder="Venegas" id="apellido">
+        </div>
+        <div class="input-formulario">
+          <label for="telefono">Telefono</label>
+          <input type="tel" placeholder="+381991123" id="telefono">
+        </div>
+        <div class="input-formulario">
+          <label for="correo">Correo</label>
+          <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea></textarea>
+        </div>
+        <div class="btn-formulario">
+          <input type="submit" class="btn btn-c" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </section>
+    <div class="pie-pagina">
+      <div class="contenedor-piePagina contenedor">
+        <div class="info">
+          <h3>Direccion</h3>
+          <p>Bonpland 1670, C1414 CABA</p>
+        </div>
+        <div class="info">
+          <h3>Dias especiales</h3>
+          <p>Viernes y Sabados: 7am-12am</p>
+          <p>+381899100</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes - Domingo:7am-12am</p>
+          <div class="redes-sociales pie-redes">
+            <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>Suscribete para recibir mas noticias</p>
+          <input type="email" placeholder="Tu correo">
+          <input type="submit" class="btn btn-c" value="Suscribirse">
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; 2022 Restaurante Argentino, desarrollado por Santiago Pedraza</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
