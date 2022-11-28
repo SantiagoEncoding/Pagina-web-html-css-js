@@ -70,7 +70,7 @@ img {
 }
 
 .pantalla-completa{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -127,6 +127,10 @@ img {
   border-color: rgba(0, 0, 0, 0.2);
 }
 
+.btn-c:hover{
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .btn-c {
     background-color: var(--celeste);
@@ -171,8 +175,10 @@ img {
 /*encabezado*/
 .contenedor-navegacion {
   background-color: var(--negro);
-  position: relative;
+  position: fixed;
   z-index: 5;
+  top: 0%;
+  width: 100%;
 }
 .contenido-navegacion {
   display: flex;
