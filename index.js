@@ -32,7 +32,7 @@ const botonCerrar = () => {
   btnCerrar.textContent = "x";
   btnCerrar.classList.add("btn-cerrar");
   navegacion.appendChild(btnCerrar);
-  cerrarMenu(btnCerrar,overlay);
+  cerrarMenu(btnCerrar,overlay,menuLinks);
 };
 
 const cerrarMenu = (boton, overlay) => {
@@ -47,7 +47,17 @@ const cerrarMenu = (boton, overlay) => {
     boton.remove();
     overlay.remove();
   };
+
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", function(){
+        navegacion.classList.add("ocultar");
+        boton.remove();
+        overlay.remove();
+    });
+  });
+
 };
+
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
@@ -113,8 +123,3 @@ const limpiarHtml = (contenedor) => {
   }
 };
 
-menuLinks.forEach(menuLink => {
-  menuLink.addEventListener("click", function(){
-      navegacion.classList.add("ocultar");
-  });
-});
