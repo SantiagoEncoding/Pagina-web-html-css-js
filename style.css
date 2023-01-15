@@ -145,7 +145,7 @@ img {
 
 .btn-celeste {
   background-color: var(--celeste);
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: var(--celeste);
   display: inline-block;
   margin-bottom: 2rem;
   font-family: var(--parrafos);
@@ -153,14 +153,14 @@ img {
 
 .btn-celeste:hover {
   background-color: var(--blanco);
-  color: var(--negro);
+  color: var(--celeste);
   cursor: pointer;
 }
 
 .btn-blanco {
   background-color: var(--blanco);
-  color: var(--negro);
-  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--celeste);
+  border-color: var(--celeste);
   display: inline-block;
   margin-bottom: 2rem;
   font-family: var(--parrafos);
